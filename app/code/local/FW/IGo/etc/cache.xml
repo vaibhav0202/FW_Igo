@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <placeholders>
+        <fw_igo_email>
+            <block>fw_igo/observationEmail</block>
+            <placeholder>IGO_TRACKING_EMAIL</placeholder>
+            <container>FW_IGo_Model_Container_Cachetest</container>
+        </fw_igo_email>
+    </placeholders>
+</config>

@@ -1,0 +1,46 @@
+<?php
+/**
+ * @category    design
+ * @package     fw_igo
+ * @copyright   Copyright (c) 2015 F+W (http://www.fwcommunity.com)
+ * @author      J.P. Daniel <jp.daniel@fwcommunity.com>
+ */
+?>
+<div id="<?php echo $this->getNameInLayout(); ?>">
+    <div class="igoRecTemplate" style="display:none;">
+        <div class="igo-products">
+            <h2>#{title}</h2>
+            <ul class="products-grid products-grid--max-#{column_count}-col">
+                #{items}
+            </ul>
+        </div>
+        <script>decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+    </div>
+    <div class="igoItemTemplate" style="display:none;">
+        <li class="item">
+            <a href="#{link}" title="#{name}" class="product-image"><img src="#{image_link}" alt="#{name}" height="120"  /></a>
+            <div class="product-info">
+                <h2 class="product-name"><a href="#{link}" title="#{name}">#{name}</a></h2>
+                <div class="price-box">
+                    #{price}
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="igoRegPriceTemplate" style="display:none;">
+    <span class="regular-price">
+        <span class="price">$#{regular_price}</span>
+    </span>
+    </div>
+    <div class="igoSalePriceTemplate" style="display:none;">
+        <p class="old-price">
+            <span class="price-label">Retail:</span>
+            <span class="price">$#{regular_price}</span>
+        </p>
+        <p class="special-price">
+            <span class="price-label">Your price:</span>
+            <span class="price">$#{sale_price}</span>
+        </p>
+        <p class="you-save">You save: $#{save}</p>
+    </div>
+</div>

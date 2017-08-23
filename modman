@@ -1,0 +1,4 @@
+app/code/local/FW/IGo/ app/code/local/FW/IGo/ 
+app/design/frontend/fw/default/layout/fw_igo.xml/ app/design/frontend/fw/default/layout/fw_igo.xml/
+app/design/frontend/fw/default/template/fw/pi/default.phtml/ app/design/frontend/fw/default/template/fw/pi/default.phtml/
+app/etc/modules/FW_IGo.xml app/etc/modules/FW_IGo.xml
